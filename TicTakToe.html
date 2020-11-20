@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="style.css">
+	<title>TicTacToe</title>
+</head>
+
+<body>
+	<div id="box">
+		<p class="tab"><span class="p"></span></p>
+		<p class="tab"><span class="result">0</span></p>
+		<p class="tab"><span class="p"></span></p>
+		<p class="tab"><span class="result"></span></p>
+		<p class="tab"><span class="p"></span></p>
+		<p class="tab"><span class="result">0</span></p>
+	</div>
+	<div id="TicTacToe">
+		<div id="startBox">
+			<div id="start" class="start" onclick="select()">Start</div>
+			<div id="select">
+				<div class="start" onclick="chooseName('pvp')">PvP</div>
+				<div class="start" onclick="chooseName('pvc')">PvC</div>
+			</div>
+			<div id="pName">
+				<input id="p1" class="input" type="text" placeholder="Player 1" minlength="1" maxlength="10">
+				<input id="p2" class="input" type="text" placeholder="Player 2" minlength="1" maxlength="10">
+				<div id="begin" class="start">Begin</div>
+			</div>
+			<div id="pvc">
+				<input id="pvcName" class="input" type="text" placeholder="Player" minlength="1" maxlength="10">
+				<div class="start pvcMode" onclick="startPvc('Easy')">Easy</div>
+				<div class="start pvcMode" onclick="startPvc('Medium')">Medium</div>
+				<div class="start pvcMode" onclick="startPvc('Hard')">Hard</div>
+			</div>
+		</div>
+	</div>
+	<div id="back" onclick="back()">Back</div>
+	<script src="script.js"></script>
+</body>
+
+</html>

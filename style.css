@@ -1,0 +1,123 @@
+body{
+    font-family: sans-serif;
+    background-color: rgba(109, 235, 98, 0.788);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 750px;
+}
+#startBox{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 456px;
+    height: 456px;
+    font-size: 80px;
+}
+.start{
+    cursor: pointer;
+    padding: 20px;
+    border-radius: 15px;
+}
+.start:hover {
+    background-color: rgba(109, 235, 98, 0.788);
+}
+#select{
+    display: none;
+}
+#box{
+    display: none;
+    justify-content: space-between;
+    flex-flow: column wrap;
+    width: 456px;
+    height: 85px;
+    font-size: 30px;
+}
+#pName{
+    display: none;
+    justify-content: space-between;
+    flex-flow: column;
+    width: 456px;
+    height: 456px;
+}
+.input{
+    margin: 10px auto;
+    font-size: 16px;
+    padding: 10px;
+    width: 250px;
+    border: 1px solid rgba(109, 235, 98, 0.788);
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    outline: none;
+}
+.null::-webkit-input-placeholder {
+    color: red;
+ }
+#p1{
+    margin-top: 30%;
+}
+#p2{
+    margin-bottom: 25%;
+}
+#begin{
+    position: relative;
+    border-radius: 0;
+    height: 73px;
+    font-size: 56px;
+    padding: 0;
+    text-align: center;
+}
+#begin:hover {
+    background-color: rgba(91, 212, 80, 0.788);
+}
+.tab{
+    margin: 0;
+    width: 150px;
+    height: 40px;
+    text-align: center;
+}
+.p{
+    margin-left: 1px;
+}
+#TicTacToe{
+    display: flex;
+    flex-flow: row wrap;
+    background-color: white;
+    width: 456px;
+    height: 456px;
+}
+.box{
+    width: 150px;
+    height: 150px;
+    border: 1px black solid;
+    text-align: center;
+    font-size: 115px;
+}
+#back{
+    display: none;
+    background-color: rgba(69, 180, 59, 0.788);
+    width: 456px;
+    height: 45px;
+    text-align: center;
+    font-size: 36px;
+    cursor: pointer;
+    border-radius: 3px;
+}
+#back:hover {
+    background-color: rgba(109, 235, 98, 0.788);
+}
+#pvc{
+    display: none;
+    justify-content: center;
+    flex-flow: column;
+    width: 456px;
+    height: 456px;
+}
+.pvcMode{
+    font-size: 40px;
+    text-align: center;
+    margin: 10px;
+    padding: 0;
+}
